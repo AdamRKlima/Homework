@@ -1,0 +1,1 @@
+##### able to populate data from weather map, must have .env file, return has to be displayed to the user, try to have user include input, error handling set up,
