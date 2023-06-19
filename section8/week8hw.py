@@ -11,6 +11,7 @@ try:
     response=requests.get(f"https://api.openweathermap.org/data/2.5/weather?q=Jacksonville&appid={api_key}")
     if response.status_code==200:
         data = response.json()
+        data=json.dumps(data, indent=1)
         print(data)
     else:
         print(f"Request failed. Failure code:",response.status_code)
